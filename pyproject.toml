@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "sites-up-monitor"
-version = "0.1.0"
+version = "0.0.1"
 description = ""
 authors = ["heathcliff <smiron1703@gmail.com>"]
 readme = "README.md"
@@ -9,6 +9,7 @@ packages = [{include = "sites_up_monitor"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 pythonping = "^1.1.4"
+tcping = "^0.1.1rc1"
 
 
 [build-system]
