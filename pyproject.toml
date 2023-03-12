@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "sites-up-monitor"
-version = "0.0.1"
+version = "1.0.0"
 description = ""
 authors = ["n-freman <nazarannanazarov@gmail.com>"]
 readme = "README.md"
