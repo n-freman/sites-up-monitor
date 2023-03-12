@@ -2,7 +2,7 @@
 name = "sites-up-monitor"
 version = "0.0.1"
 description = ""
-authors = ["heathcliff <smiron1703@gmail.com>"]
+authors = ["n-freman <nazarannanazarov@gmail.com>"]
 readme = "README.md"
 packages = [{include = "sites_up_monitor"}]
 
