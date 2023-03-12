@@ -16,7 +16,7 @@ pip install -e sites-up-monitor
 
 - Change directory to project directory:
 ```
-cd sites_up_monitor
+cd sites-up-monitor
 ```
 
 - You need to create input.csv file, which contains
