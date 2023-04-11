@@ -2,3 +2,4 @@ venv/*
 input.csv
 output.log
 *__pycache__*
+changes.txt

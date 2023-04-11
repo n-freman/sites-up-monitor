@@ -10,6 +10,7 @@ packages = [{include = "sites_up_monitor"}]
 python = "^3.10"
 pythonping = "^1.1.4"
 tcping = "^0.1.1rc1"
+pyopenssl = "^23.1.1"
 
 
 [build-system]

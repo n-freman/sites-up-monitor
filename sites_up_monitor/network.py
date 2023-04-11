@@ -53,4 +53,8 @@ class Site:
         self.addresses = {*self.addresses}
 
     def __str__(self):
+        string_representation = f'''[\'{self.host_name}\', {list(self.addresses)}, {list(port[0] for port in self.ports)}]'''
+        if hasattr(self, 'cert_valid'):
+            print(f'has attr cert valid {self.host_name}')
+            string_representation += ' valid cert' if self.cert_valid else 'INVALID cert'
         return f'''[\'{self.host_name}\', {list(self.addresses)}, {list(port[0] for port in self.ports)}]'''

@@ -3,12 +3,14 @@ from .logger import Logger
 from .reader import Reader
 from .network import Site
 from .pinger import PingerFactory
+from .certificates import CertChecker
 
 
 class App():
     def __init__(self):
         self.reader = Reader(conf.INPUT_DATA_FILE_LOC)
         self.logger = Logger(conf.OUPUT_DATA_FILE_LOC)
+        self.cert_checker = CertChecker()
         self.sites = []
     
     def update(self):
@@ -21,6 +23,7 @@ class App():
         for site in self.sites:
             pinger = PingerFactory.build_pinger(site)
             pinger.ping()
+            self.cert_checker.check_certificate(site)
             self.logger.log(site)
 
     def run(self):
